@@ -1,0 +1,31 @@
+{
+    "full_name": "Raheem Yaqub Adesola",
+    "name": "Yaqub",
+    "current_role": "Senior Full stack Engineer",
+    "location": "Lagos, Nigeria",
+    "email": "yaqub.adesola@gmail.com",
+    "linkedin": "linkedin.com/in/yaqubadesola/",
+    "specialties": [
+      "Full stack Engineer",
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "years_experience": 10,
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Federal University of Oye Ekiti",
+        "year": "2020"
+      },
+      {
+        "degree": "Higher National Diploma in Computer Science",
+        "institution": "The Polytechnic, Ibadan",
+        "year": "2018"
+      },
+      {
+        "degree": "National Diploma in Computer Science",
+        "institution": "The Polytechnic, Ibadan",
+        "year": "2016"
+      }
+    ]
+  }
