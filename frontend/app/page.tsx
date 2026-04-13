@@ -99,34 +99,6 @@ localStorage.setItem("dark-mode", darkMode.toString());
                   experience building scalable enterprise platforms across fintech, banking, 
                   and cloud systems.
                   </p>
-
-                  <p>
-                  Recently, I completed intensive AI Engineering training through Andela, 
-                  alongside advanced programs in:
-                  </p>
-
-                  <ul className="list-disc list-inside space-y-1 opacity-80">
-                  <li>LLM Engineering</li>
-                  <li>Agentic AI Systems</li>
-                  <li>RAG Architecture</li>
-                  <li>Production AI Deployment</li>
-                  <li>MCP & Tool-calling agents</li>
-                  <li>AI Infrastructure & Observability</li>
-                  </ul>
-
-                  <p>
-                  I now specialize in building production-ready AI systems, including:
-                  </p>
-
-                  <ul className="list-disc list-inside space-y-1 opacity-80">
-                  <li>Multi-agent AI systems</li>
-                  <li>RAG pipelines</li>
-                  <li>AI copilots</li>
-                  <li>AI automation systems</li>
-                  <li>Enterprise LLM integrations</li>
-                  <li>AI microservices</li>
-                  </ul>
-
                   <p>
                   My background in Full-Stack Engineering, DevOps, and Fintech systems allows 
                   me to build AI systems that actually ship to production — not just prototypes.
