@@ -37,6 +37,7 @@ else
   -var="project_name=$PROJECT_NAME" \
   -var="environment=$ENVIRONMENT" \
   -var="openrouter_api_key=$OPENROUTER_API_KEY" \
+  -var="github_repository=yaqubadesola/digital-twin-aws" \
   -auto-approve)
 fi
 
