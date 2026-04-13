@@ -10,26 +10,51 @@ variable "github_repository" {
 resource "aws_iam_role" "github_actions" {
   name = "github-actions-twin-deploy"
   
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Effect = "Allow"
-        Principal = {
-          Federated = "arn:aws:iam::756418066722:oidc-provider/token.actions.githubusercontent.com"
-        }
-        Action = "sts:AssumeRoleWithWebIdentity"
-        Condition = {
-          StringEquals = {
-            "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
-          }
-          StringLike = {
-            "token.actions.githubusercontent.com:sub" = "repo:${var.github_repository}:*"
-          }
-        }
-      }
-    ]
-  })
+#   assume_role_policy = jsonencode({
+#     Version = "2012-10-17"
+#     Statement = [
+#       {
+#         Effect = "Allow"
+#         Principal = {
+#           Federated = "arn:aws:iam::756418066722:oidc-provider/token.actions.githubusercontent.com"
+#         }
+#         Action = "sts:AssumeRoleWithWebIdentity"
+#         Condition = {
+#           StringEquals = {
+#             "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
+#           }
+#           StringLike = {
+#             "token.actions.githubusercontent.com:sub" = "repo:${var.github_repository}:*"
+#           }
+#         }
+#       }
+#     ]
+#   })
+
+    assume_role_policy = jsonencode({
+        Version = "2012-10-17"
+        Statement = [
+            {
+            Effect = "Allow"
+            Principal = {
+                Federated = "arn:aws:iam::756418066722:oidc-provider/token.actions.githubusercontent.com"
+            }
+            Action = "sts:AssumeRoleWithWebIdentity"
+            Condition = {
+                StringEquals = {
+                "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
+                }
+                StringLike = {
+                "token.actions.githubusercontent.com:sub" = [
+                    "repo:${var.github_repository}:ref:refs/heads/main",
+                    "repo:${var.github_repository}:ref:refs/heads/dev",
+                    "repo:${var.github_repository}:*"
+                ]
+                }
+            }
+            }
+        ]
+        })
   
   tags = {
     Name        = "GitHub Actions Deploy Role"
