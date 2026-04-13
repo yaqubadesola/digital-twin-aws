@@ -11,19 +11,19 @@ variable "github_repository" {
 # GitHub OIDC Provider
 # Note: If this already exists in your account, you'll need to import it:
 # terraform import aws_iam_openid_connect_provider.github arn:aws:iam::ACCOUNT_ID:oidc-provider/token.actions.githubusercontent.com
-resource "aws_iam_openid_connect_provider" "github" {
-  url = "https://token.actions.githubusercontent.com"
+# resource "aws_iam_openid_connect_provider" "github" {
+#   url = "https://token.actions.githubusercontent.com"
   
-  client_id_list = [
-    "sts.amazonaws.com"
-  ]
+#   client_id_list = [
+#     "sts.amazonaws.com"
+#   ]
   
-  # This thumbprint is from GitHub's documentation
-  # Verify current value at: https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/
-  thumbprint_list = [
-    "1b511abead59c6ce207077c0bf0e0043b1382612"
-  ]
-}
+#   # This thumbprint is from GitHub's documentation
+#   # Verify current value at: https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/
+#   thumbprint_list = [
+#     "1b511abead59c6ce207077c0bf0e0043b1382612"
+#   ]
+# }
 
 # IAM Role for GitHub Actions
 resource "aws_iam_role" "github_actions" {
