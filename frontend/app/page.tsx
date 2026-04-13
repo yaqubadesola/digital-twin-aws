@@ -91,38 +91,128 @@ localStorage.setItem("dark-mode", darkMode.toString());
                 </p>
 
               </div>
+              {/* About */}
+              <div className="mt-6 text-sm leading-relaxed space-y-4">
 
-              <div className="mt-6 text-sm leading-relaxed opacity-80">
-                I'm Yaqub's Digital Twin. Ask me about experience,
-                projects, hiring, or collaboration.
-              </div>
+                  <p>
+                  I'm a Senior Software Engineer turned AI Engineer with over 10 years of 
+                  experience building scalable enterprise platforms across fintech, banking, 
+                  and cloud systems.
+                  </p>
 
-              {/* Quick Questions */}
-              <div className="mt-6 space-y-2">
+                  <p>
+                  Recently, I completed intensive AI Engineering training through Andela, 
+                  alongside advanced programs in:
+                  </p>
 
-                {[
-                  "What do you focus on?",
-                  "How can we collaborate?",
-                  "What's your experience?",
-                  "Best way to contact you?"
-                ].map((q) => (
+                  <ul className="list-disc list-inside space-y-1 opacity-80">
+                  <li>LLM Engineering</li>
+                  <li>Agentic AI Systems</li>
+                  <li>RAG Architecture</li>
+                  <li>Production AI Deployment</li>
+                  <li>MCP & Tool-calling agents</li>
+                  <li>AI Infrastructure & Observability</li>
+                  </ul>
 
-                  <button
-                    key={q}
-                    className={`w-full text-left p-3 rounded-lg transition text-sm ${
-                      darkMode
-                      ? "bg-slate-700 hover:bg-slate-600"
-                      : "bg-gray-50 hover:bg-gray-100"
-                    }`}
-                  >
-                    {q}
-                  </button>
+                  <p>
+                  I now specialize in building production-ready AI systems, including:
+                  </p>
 
-                ))}
+                  <ul className="list-disc list-inside space-y-1 opacity-80">
+                  <li>Multi-agent AI systems</li>
+                  <li>RAG pipelines</li>
+                  <li>AI copilots</li>
+                  <li>AI automation systems</li>
+                  <li>Enterprise LLM integrations</li>
+                  <li>AI microservices</li>
+                  </ul>
 
-              </div>
+                  <p>
+                  My background in Full-Stack Engineering, DevOps, and Fintech systems allows 
+                  me to build AI systems that actually ship to production — not just prototypes.
+                  </p>
+              </div>   
+
+           {/* Skills */}
+            <div className="mt-8 space-y-6">
+
+            {/* AI Engineering */}
+            <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wider opacity-60 mb-3">
+            AI Engineering
+            </h3>
+
+            <div className="flex flex-wrap gap-2">
+            {[
+            "LLM Engineering",
+            "Agentic AI",
+            "RAG",
+            "LangChain",
+            "Multi-Agent Systems",
+            "AI Copilots"
+            ].map((skill) => (
+            <span
+            key={skill}
+            className="text-xs px-3 py-1 rounded-full border border-gray-200 bg-white/60 backdrop-blur"
+            >
+            {skill}
+            </span>
+            ))}
+            </div>
+            </div>
+
+            {/* Backend */}
+            <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wider opacity-60 mb-3">
+            Backend Engineering
+            </h3>
+
+            <div className="flex flex-wrap gap-2">
+            {[
+            "Python",
+            "FastAPI",
+            "Spring Boot",
+            "Microservices",
+            "REST APIs"
+            ].map((skill) => (
+            <span
+            key={skill}
+            className="text-xs px-3 py-1 rounded-full border border-gray-200 bg-white/60 backdrop-blur"
+            >
+            {skill}
+            </span>
+            ))}
+            </div>
+            </div>
+
+            {/* Infrastructure */}
+            <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wider opacity-60 mb-3">
+            Infrastructure
+            </h3>
+
+            <div className="flex flex-wrap gap-2">
+            {[
+            "AWS",
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "Observability"
+            ].map((skill) => (
+            <span
+            key={skill}
+            className="text-xs px-3 py-1 rounded-full border border-gray-200 bg-white/60 backdrop-blur"
+            >
+            {skill}
+            </span>
+            ))}
+            </div>
+            </div>
 
             </div>
+            {/* End Skills */}
+            </div>
+            
           </div>
 
           {/* Chat */}
