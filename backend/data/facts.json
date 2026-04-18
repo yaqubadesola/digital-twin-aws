@@ -1,16 +1,31 @@
 {
     "full_name": "Raheem Yaqub Adesola",
     "name": "Yaqub",
-    "current_role": "Senior Full stack Engineer",
+    "current_role": "Senior Full-Stack & AI Engineer",
     "location": "Lagos, Nigeria",
     "email": "yaqub.adesola@gmail.com",
+    "phone": "+2348074544422",
     "linkedin": "linkedin.com/in/yaqubadesola/",
-    "specialties": [
-      "Full stack Engineer",
-      "Frontend Engineer",
-      "Backend Engineer"
-    ],
+    "github": "github.com/yaqubadesola",
     "years_experience": 10,
+    "open_to": "Remote, Relocation",
+    "specialties": [
+      "AI Engineering",
+      "LLM Engineering & Agentic AI",
+      "Full-Stack Engineering",
+      "Frontend Engineering (React / Next.js)",
+      "Backend Engineering",
+      "DevOps & Cloud Infrastructure"
+    ],
+    "ai_skills": {
+      "llm_frameworks": ["LangChain", "LangGraph", "CrewAI", "OpenAI API", "Anthropic API"],
+      "agentic_ai": ["Multi-Agent Systems", "AI Copilots", "Autonomous Agents", "Incident Response Agents", "Tool-calling Agents"],
+      "rag_and_knowledge": ["Retrieval-Augmented Generation (RAG)", "Vector Databases", "ChromaDB", "Pinecone", "Semantic Search", "Embeddings"],
+      "prompt_engineering": ["System Prompts", "Few-shot Prompting", "Chain-of-Thought", "Structured Outputs"],
+      "ai_tools": ["Gradio", "Streamlit", "Hugging Face", "OpenAI GPT-4o", "Claude", "Gemini"],
+      "ai_applications": ["Digital Twins", "Medical AI SaaS (saas-medical-note)", "AI Incident Response Agents (agent_incidence_response)", "AI Chatbots", "AI Copilots for enterprise systems"],
+      "courses_completed": ["Complete Agentic AI Engineering Course (agents repo)", "Agentic AI Workflows", "Multi-Agent Architecture Design"]
+    },
     "education": [
       {
         "degree": "Bachelor of Science in Computer Science",
@@ -27,5 +42,12 @@
         "institution": "The Polytechnic, Ibadan",
         "year": "2016"
       }
+    ],
+    "certifications": [
+      "Frontend Development Professional Course — Meta",
+      "React Native Specialist (Mobile Development) — Meta",
+      "Programming Essentials in Python (PCAP) — Python Institute",
+      "Next.js Development Course — Udemy",
+      "DevOps & Kubernetes Engineer Track (CKA) — KodeKloud (In Progress)"
     ]
   }
