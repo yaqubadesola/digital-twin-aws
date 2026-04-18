@@ -5,10 +5,10 @@ import { MessageCircle, X, Moon, Sun, Mail, GitFork, ExternalLink, MapPin, Zap }
 import Twin from '@/components/twin';
 
 const SKILLS: Record<string, string[]> = {
-  'AI Engineering': ['LLM Engineering', 'Agentic AI', 'RAG', 'LangChain', 'Multi-Agent Systems', 'AI Copilots'],
-  'Backend Engineering': ['Python', 'FastAPI', 'Spring Boot', 'Microservices', 'REST APIs'],
-  'Infrastructure': ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Observability'],
-  'Frontend': ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+  'AI Engineering': ['LLM Engineering', 'Agentic AI', 'RAG', 'LangChain', 'LangGraph', 'CrewAI', 'Multi-Agent Systems', 'AI Copilots', 'Prompt Engineering', 'OpenAI API', 'Vector Databases', 'Gradio', 'Hugging Face'],
+  'Backend Engineering': ['Python', 'FastAPI', 'Spring Boot', 'Java', 'Node.js (NestJS)', 'PHP (Laravel)', 'Microservices', 'REST APIs', 'GraphQL'],
+  'Infrastructure': ['AWS Lambda', 'AWS API Gateway', 'S3', 'CloudFront', 'Terraform', 'Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions'],
+  'Frontend': ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'React Native', 'Redux', 'Zustand'],
 };
 
 export default function Home() {
@@ -38,8 +38,8 @@ export default function Home() {
       {/* ── Navbar ────────────────────────────────────────────────── */}
       <nav className={`fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md transition-colors ${dm ? 'bg-gray-950/80 border-gray-800' : 'bg-white/80 border-gray-200'}`}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="font-bold text-xl bg-gradient-to-r from-violet-500 to-cyan-400 bg-clip-text text-transparent tracking-tight">
-            YR
+          <span className="font-extrabold text-xl bg-gradient-to-r from-violet-500 to-cyan-400 bg-clip-text text-transparent tracking-tight">
+            YAQUB
           </span>
           <div className="flex items-center gap-6">
             <a href="#about" className={`text-sm transition hover:opacity-100 ${dm ? 'opacity-60' : 'opacity-70'}`}>About</a>
@@ -91,7 +91,7 @@ export default function Home() {
             Yaqub Raheem
           </h1>
 
-          <p className="text-xl md:text-2xl font-semibold mb-6 bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+          <p className="text-xl md:text-2xl font-medium mb-6 text-violet-400 tracking-wide" style={{ fontStyle: 'italic', fontFamily: 'Georgia, "Times New Roman", serif' }}>
             Senior Full-Stack &amp; AI Engineer
           </p>
 
