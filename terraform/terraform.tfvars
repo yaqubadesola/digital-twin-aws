@@ -1,7 +1,7 @@
 project_name             = "twin"
 environment              = "dev"
 # bedrock_model_id         = "amazon.nova-micro-v1:0"
-openrouter_model         = "openai/gpt-4o-mini"
+openrouter_model         = "openai/gpt-5.4"
 openrouter_base_url      = "https://openrouter.ai/api/v1"
 lambda_timeout           = 60
 api_throttle_burst_limit = 10
